@@ -1,113 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/normalize.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
-    <!-- 상대요소 : 지금 현재 내 위치에서의 파일 위치 -->
-    <!-- 절대요소 : ex) C:\Users\... -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <title>The Web framework for perfectionists with deadlines | Django</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <h1 class="logo">
-                <img src="https://static.djangoproject.com/img/logo-django.42234b631760.svg" alt="Django"/>
-            </h1>
-            <nav class="nav">
-                <ul class="list">
-                    <li class = "list-item"><a href="#">OverView</a></li>
-                    <li class = "list-item"><a href="#">Download</a></li>
-                    <li class = "list-item"><a href="#">Document</a></li>
-                    <li class = "list-item"><a href="#">News</a></li>
-                    <li class = "list-item"><a href="#">Community</a></li>
-                    <li class = "list-item"><a href="#">Code</a></li>
-                    <li class = "list-item"><a href="#">Aboute</a></li>
-                    <li class = "list-item"><a href="#">♥ Donate</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <h1 class="logo">
+          <img
+            src="https://static.djangoproject.com/img/logo-django.42234b631760.svg"
+            alt="Django"
+          />
+        </h1>
+        <nav class="nav">
+          <ul class="list">
+            <li class="list-item"><a href="#">Overview</a></li>
+            <li class="list-item"><a href="#">Download</a></li>
+            <li class="list-item"><a href="#">Documentation</a></li>
+            <li class="list-item"><a href="#">News</a></li>
+            <li class="list-item"><a href="#">Community</a></li>
+            <li class="list-item"><a href="#">Code</a></li>
+            <li class = "list-item"><a href="#">Issues</a></li>
+            <li class="list-item"><a href="#">About</a></li>
+            <li class="list-item"><a href="#">♥ Donate</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
-        <div class="hero-section">
-            <div class="container">
-                <p class="intro-desc">
-                Django makes it easier to build better Web apps more quickly and with less code.
-                </p>
-                <a href="#" class="cta">
-                    Get started with Django
+      <div class="hero-section">
+        <div class="container">
+          <p class="intro-desc">
+            Django makes it easier to build better Web apps more quickly and
+            with less code.
+          </p>
+          <a href="#" class="cta">
+            Get started with Django
+          </a>
+        </div>
+      </div>
+      <div class="container-float">
+        <div class="main-content">
+          <h2 class="main-title">Meet Django</h2>
+          <p class="main-desc"  style="padding-bottom: 30px;">
+            Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic 
+            design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can 
+            focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+          </p>
+          <h1 class="spark">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXAD2vL4GJXtDdBzjGHCgQBHWXeGgLDChWA&usqp=CAU" 
+            alt="Spark"
+            style=" float:left; width:100px; height:100px;"
+            />
+          </h1>
+          <div class="container" style="padding-bottom: 30px;">
+            <p class="Advantages">
+              Ridiculously fast.
+            </p>
+            <p class="content">
+              Django was desigened to help developers take applications from concept to completion as
+              quickly as possible
+            </p>
+          </div>
+          <h1 class="secure">
+            <img src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIPDw0NDxIQDxAQEBUOEg4PDQ8QDw8RFREWFhYXFRcYICggGBolGxMVITEiJSkrLi4uFx8zODM4NygtLisBCgoKDg0OGhAQGi4lHyUrKystLS0uLi0tLS0rNy0tLS0tLystLS0rLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAgcBAwYFBP/EAEMQAAIBAgEHBgsGBQQDAAAAAAABAgMRBAUGEiExQVETImFxkaEHFjI0QnOBk7Gy4SMzUlTB0hRicoLRQ1OSwhWi8f/EABoBAQACAwEAAAAAAAAAAAAAAAABBAIDBQb/xAAyEQEAAgECAwQIBgMBAAAAAAAAAQIDBBESITEFMkFxExQVUWGBkeEiM1KhwdE0QrEj/9oADAMBAAIRAxEAPwC8QAAAAAAAAGG94Hi4/OrC0brlOVkvRpc/tezvKeXX4MfW2/lzarZqR4uexmfk3dUaUY9NSWk+xHPydrz/AKV+rTbU+6HkYjOnF1P9VwXCnGMe/b3lK/aOot/tt5NU5rz4vOq4+tPy6taX9Vao18SvbPlnrafrLCb2nxfPK726+vWa5tM+KNxK2zV1ahxSbt9LGVYeRVqx/prVI/Bmdc+SvS0/WUxa0eL78PnLi6drVpSXCajPvav3linaGor/ALb+bOM148Xr4PPuqrKrThNcYNwfY7ouY+17x36/RsrqZ8Ye/gM78LVspSdGT3VVaP8Ay2dpfxdo4L+O3m3Vz0l70JqSUotST1pppproZeiYmN4bkiQAAAAAAAAAAAAAAAAYlJJNtpJa227JCZ2HLZYz0pU7ww65aS1aeykn0P0vYcvUdqY6cqc5/ZXvniOjjMp5Zr4lvlZtx/21zaa9i2+042fV5c3enl7vBVvktbq+FIqsGVEbiWiQGiN0s6IDRAaI3GNEIRcSdxiwH1ZPylWw7vRnKGu7ineD64vUb8OoyYp/BP8ATOt7V6OwyRnvCVoYmOg9nKwTcP7ltXednT9q0tyyRt8fBZpqInvOuo1YzipwkpxetSi0010NHWraLRvErMTumSAAAAAAAAAAAAAedlnLNLCQ0qr5z8mnHXOb6Fw6SvqNTjwV3vPyYXvFI5q6y3nBWxbak9CnupRfN/ufpM87qddkz8uke7+1LJlmzylEpNSSiQlJIDNiBmwGbBJYBYBYDFghiwGGiRhxG4g4k7ofdkjLNbCSvSlzW7ypy1wl7Nz6UWtPq8mCfwzy9zZTJNeixcg5w0sWrLmVUrypSevri/SR6LTazHnjl19y7jyxd7BbbAAAAAAAAAAA8DObOSGEXJwtOvJao+jBfin/AI3lHWa2uCNo52939tOXLFOXirfFYmdacqlSTnOW2T+C4LoPNZMtsluK07ypWtNp3lCMTWxTSMUpWAzYgAAAAAAAAACwGLEiLQEXElDFOcoSjOLcZRd1JOzT6DOtprPFWeaYnZYOa2dKr6NCvaNb0Z7I1f8AEug9Fou0Iy/gvyt/1dxZuLlPV1J028AAAAAAAA8DOrOFYSGhC0q81zVugvxS/RbyjrdZGCu0d6en9tOXLwR8VaVakpylOTcpSd3J7W+k8ze82mbWnmozO/OWYowQmkYpZAyQAAAAAAAAAAAAAYJGGgISRKENad1q33W1MyiducCwcz85eXSw1d/apcyb/wBVL/su89HoNd6WOC/e/wCruHLxcp6urOmsAAAAAAedl7K0cJRlVlrl5MIX1zm9i6t7K+p1FcGObT8mGS8UjdVGLxM61SdWo9Kc3dv9F0HlMuS2S02t1lzrWm07yjFGtDYkYpZAAAAAAAAAAAAAAAAAAGGBCSJQjCbhJSi3Fp3UltTWxozraazvHVMTstDNXLixdLnWVanaNSPHhJdD+J6nRaqM9OfWOq/iyccfF7ZcbQAAAxKSSbepJXbexITOwqnObLDxddyX3cLxpr+XfLrfwPLa7U+nycukdP7c/Lk45eXFFFqbEYpZAAAAAAAAnRpSm9GEZTfCMXJ9xNaWtO1Y38kxEz0ffDIOKetUKnYl8WWY0OonpSWXo7+4lkDFLW6FTsT/AFE6HUR/pP7Hor+58NehOm7TjKD4Si437SvelqTtaNvNjMTHVrMUAAAAAAAMMCEkZIfTkfKUsLWhWhu1Sj+OD2os6bPOHJF4+bOl+Gd1uYXERq04VYO8ZxUk+hnrKWi9YtHSXRid43htMkgADlM/sq8lRWGg7TreVbaqS29uztOZ2nqODHwR1n/ivqL7Rsr2KPOKTYkYiZCQAAAAAAHU5uZqOso1sReNN6401qlNcW9y7zr6LsyckRfLyj3e9Yx4N+dnb4XCU6UVCnCMIrdFJf8A072PFTHHDSNoW4rEdG42JANWIw8KkXCpGM4vapRTRjelbxtaN4RMRPVxucOaOgpVsLdpa5UW7tL+V7+o4es7L4Y48P0/pVyYNudXIHEVgAAAAAAEWShqkiYHaeDzKvl4Ob1a6lK+78cf19rO72Tn5Tinzhb09/8AV3J2loAw3bWBUGXcovFYmrW9FvRh0QWqPbt9p5LV5vS5Zt4eDm5L8Vt3yRKssE0QMkAAAAAAHQZn5IWIrOpNXpUrNp7Jy3J9G86XZuljNk4rd2P3lvw4+Kd5WOenXkZzUU5SaSSu23ZJdJEzERvI8DGZ4Yem3GOlVa3wXN7Wc7L2rgpO0c/JotnrCGFzzw83aSnS6ZK69tjHH2tgtO07x5kaisuho1YzipwalFq6lF3TOnW0WjeJ5N0Tv0TJSr/PbJCo1FiKatCq+clsjPj1P4nnO1NLGO3pK9J6+f3Us+Pad4cwclXAAAAAAwwISJEsHipUatOtDyqclJdNtq9qujdhyTjvF48E1twzuuTCYiNWnTqwd4zipp9DVz2FLRasWjxdOJ3jdtMkvDzzx3I4OrZ2lV+xj/dqb/43Kevy+jwWn38vq1ZrbUlVkUeVlzm2JilIgZAAAAAABZeZuGVPB0nvqXqP2vV3I9V2bj4NPX481/BG1HuF9uV3nhluVapKhB2pU3ZpPy5La3xSZ5ntLVzlvOOvdj95Uc2TinaOjnDmNAB7ea+W5YaqoSb5GbtKLeqLfpLh0l/QaucF9p7s9f7bsWSaz8FmJnql95mcuG5XCV471HTXQ46/0Kutx+kwWj4NeWN6Sqs8g5wAAAAAACLJGqRlCFieDzG6eGlQe2jN2/onzl36R6PsvLxYeH3L2ntvXZ1R01hwPhJxd6mHoL0Yuo10vUu5M4fa+TnWnzVNTbpDj4nElUbUQlkgAAAAAAAWxkDzTDeqj8D2Ok/Ip5Q6WPuQ+rGT0adWS2xhKXZFs25LcNJn4MrTtCnb7zxLlgAABbWQ6rnhcNN626UG306KPZaW02w0mfdDpY53rEt2UPua3q5/KzPL3LeUpt0lT54qOjmAAAAAAAMMka5Ewh0OYOL5PGcnuqwcPaucv1Or2Vk4cvD74WNPba2yzD0S8qfPHEcpjsRwg401/bFX72zy/aN+LPb4cnOzzveXlRKEtTYiEhAAAAAAAAtrIHmmG9VH4HsdJ+TTyh0sfchvyj9xX9VP5WZ5vy7eUpt3ZU8jxcOYAAAFsZu+Z4T1MPlR7DR/kU8odHF3I8n05Q+5rerl8rNuXuW8pZW6Sp48VHRzAAAAAAABgQkZQhvyRiOSxOGqbNGrC76HKz7myzpb8Gas/FnSdrRK5LnrnTUvlGpp4jET/FWqS9jqOx4/UTvltPxly7zvaUImiWKaISEAAAAAAAC2sgeaYb1Ufgex0n5NPKHSx9yG/KP3Ff1U/lZnm/Lt5Sm3dlTyPFw5gAAAWxm55nhPUw+VHsNH+RTyh0cXcjyfTlD7mt6ufys25e5byllbpKnjxUOYAAAAAAAEiEiUNNXY7bbajKBZ/jFHoPU+tQ6HpFYRlfXxd+08vbnMufLbEwEyEgAAAAAfbkfJ7xNaNBSUHJN6TjpWsr7DfpsHpskU32ZUrxTs6TxCn+Yj7l/uOn7Gt+v9vu3+rT73Y5Ow3I0aVJvScIKGla17LgdrDj9HjinuharG0RCeJpadOpC9tKDjfhdWMr14qzX3wmY3jZxfiFP8xH3L/ccP2Nb9f7fdU9Vn3niFP8xH3L/cPY1v1/t9z1afeeIU/wAxH3L/AHD2Nb9f7fc9Wn3niFP8xH3L/cPY1v1/t9z1afe7DJmF5GjRot6TpwUNK1r2Vr2Ozhx+jx1p7o2WqV4axDbiKenCcNmlFxvwurGd68VZhMxvGzivEKf5iPuX+44fsa36/wBvuq+rT73P5dyU8JVVFzVR6CnpKOjtbVrXfA52q006e/BM78t2jJTgnZ5xWYAAAAAARkShpqEwJf8AkHxLnpZbOJCCtq4airbq1y3RMBIgZAAAAAD3My/PaXVL5S/2Z/kR827B34WcepdAAAAAAAAAAAK5z/8APF6mPzSPNdrfnx5R/Kjqe+5s5iuAAAAABCRI1VGZQIfwb4Fr0cs+F9ONp6FfEQ/BWqQ7Jtfoas9dslo+MsbRtaUYs0ITuQAAAAAAe5mV57S6pfKX+zP8iPm3YO/Czz1LoAAABxmcGeMqdSVHDKL0HoyqyWldraor9WcXV9p2paaYvDxVcmomJ2q0ZGz1m6kYYlRcJO3KQWi4t8VsaNem7VvxRXLttPixpqJ32s7lPed5cZAAAK4z/wDPF6mPzSPN9rfnx5R/Kjqe+5s5auAAAABcCEmSNFZ6n1GUIWN4s9B6X1R0PRORztocnj8Ut0pqov7opvvucftCnDnt8earmja8vMiyi1NiIAAAAAAPdzK8+pdUvlL/AGb/AJEfNuwd+FnnqHQAAGJq6a6CJ6CmcVSlCpUhO+lGTTvxueLyVmtprbru5UxMTtLXGLk1Fa23ZJb2zGImeUIXLgoONKlGXlKEU+tI9pjiYrET7nVryhuM0gACuPCB54vUx+aR5vtb8+PKP5UdT33NHMVwAAAAAISZI2ZOocriMPS26dWEX1aSv3XN+npx5a1+LKkb2iF1aJ691Fd+EvCaNehXWycHTb6Yu67mzh9rY/xVv8lLVV5xLkos4sqzYmQMgAAAAB7uZXn1Lql8pf7N/wAiPm3YO/C0D1DoAAABwHhEjTVajoxSqSi5TktsldKN+xnn+14rF67Rz8VLU7bw+TMOMHi7TipPQbpt+jNNa17LmrsqKzn/ABR4cmOn24+ayj0q+AAAFb+EDzxepj80jzfa358eUfyo6nvuaOYrgAAAAw2BCTJHvZhYXlMdCW6lGVTqfkr4s6fZmPizcXub9PXe+60z0a+5zP3A8rgqk0ryotVlx0V5Xdd+wpdoYuPDPw5tOeu9FXQZ5eXPbUyBkgAAAAB7uZPn1Lql8pf7N/yI+bdg78LRPUOgAAAFWZ44rlcbW4QtTXsWvvPLdo5OPUT8OTnZ7b3l8ub+J5LFYepuU1F9UtT+Jq0l+DPWfj/1jjttaJW6eudMAAAK38IPni9TH5pHm+1vz48o/lR1PfcycxXAAAABhska5MmBYPg0wOjQq4lrXVnoxf8AJDU//a/Yeh7LxcOOb+9d01dq7uyOoso1IKUZRkrxknFp7GmrNETG8bSKWyrgHhsRWw7vzJc1vfB64vsPJ6nDOLJNXLvXhtMNEWV2KaIGQAAAB7uZPn1Lql8pe7N/yI+bdg78LRPUOgAAMMDh6+YtSc5zdeF5Scn9nLa3ficO/ZN7Wm036/D7qk6aZnfdBZg1FrVeF1rX2cv8kex7fr/b7o9Wn3u5pRajFPW0km+LsdyI2hbhMlIAArbwg+eL1MPmmeb7W/Pjyj+VDU9/5OaOa0AAABgCMmBilRlUnClBXlOShFdLdjbjpN7RWPEiN52hdOTcHGhRpUIeTTgoddlrfW3d+09djpFKxWPB1axwxs+kzSAcT4SMk6UIY2C10+ZUt+BvU/Y33nK7UwcVPSR4f8VdTTeOJwEWcCVNsTMRIAAAAe7mR59S6pfKXuzf8iPm3YO/C0j1DoAAAAAAAAAABW3hC88XqYfNM852t+fHlH8qGp7/AMnMnMaAAAAiwISZMDr/AAcZJ5SrPGTXNp/Z0775ta2upPvO12Xg3mck+ULWmpvPEsU7a4AANdejGpCVOaUozi4yi9jTVmiLVi0bSiY3U5l7JUsHiJ0JXcfKpyfpQez2rYeW1ennDkmvh4ObkpwW2fHFlRgkmQMgAAH1ZOx88PUjWp2043S0lda1wNuHLbFfjr1ZVtNZ3h7Pjti+NL3X1LvtXP8AD6fdt9YueO2L40vdfUe1c/w+n3PWLnjti+NL3X1HtXP8Pp9z1i547YvjS919R7Vz/D6fc9YueO2L40vdfUe1c/w+n3PWLnjti+NL3X1HtXP8Pp9z1i547YvjS919R7Vz/D6fc9YueO2L40vdfUe1c/w+n3PWLnjti+NL3X1HtXP8Pp9z1i547YvjS919R7Vz/D6fc9Yu8jKuU6mKqcrV0dLRUObHRVk2/wBWVM+e2e3Ffr0ar3m07y+M0MQABhsCLZI2YDBzxFWnQpq8pu190Vvb6EjfgwzlvFITSs2naFy5MwMMPRp0KatGEbdLe1t9Ld2erx4646xWvSHTrWKxtD6jNkAAAHiZ15CWNoOKsq0OdSm+O+L6GVdXpoz028fBqy4+OuypZwlCUoTTjKL0ZRe1NHmL0mszE9XOmNp2lJM1iVwFyAAAAAAAAAAAAAAAAAAFyRFsDXJ+17LLazKIFn5j5vfwtJ1qq+3qrWv9uG6PXvf0PSaHS+hpvbvSv4MXBG89XUF9vAAAAAA5HPbNf+IX8TQS5eK50P8Aeiv+y79hztdo/Sxx170fur58PFzjqrZPanqa1NPU0zzsxMTtKimmYiSZAyAAAAAAAAAAAAAAAAxcDDZI1ykZRA7rMbNZpxxuJjbfRpNa1/PJfBe07mg0XD/6X6+ELeDDt+KzvTrrYAAAAAAABx+eGaKxF8Thko1tsobI1v8AEvic3WaGMv46d7/qvmw8XOOquZRcZOEk4yi7OMlZp9J5+1JrO0qMxtyllMwEkwMkAAAAAAAAAAAAAGGyRFsCDe7a3qSW1syiNx3eZ+ZzTjisWtnOp0Hu4Sn+iO5otBw/jydfCFvDg2/FZ3p11sAAAAAAAAAAPBzlzXpY1af3VdLm1Yrb0TXpLvRU1Ojpnjnyn3tWTFF/NWWVslVsJPQrwt+Ga1wn1P8AQ8/n018M7Wj5qN8dqTzfGpFbZgkpEbDNwM3AXAyQAAABi5IXAXAi5DYYcidhtwGCq4mapUIOcnw2RXGT3I3YcF8s7VhNazadoWTmxmfTwtq1a1WvuduZS/pXHpZ39LoaYfxTzsvYsEU5z1dQX28AAAAAAAAAAAADTi8LCtB06sY1IS1OMldMxtWLRtaETETylw2W/B/a88HLVt5Co9n9Mv8APacnP2XE88c/JVvpvGri8ZhalCXJ1oSpy4SVk+p7H7Dk5MN8c7WjZVtWa9WtSNWyGbkDNwFyBm4C4GLgLkjFwMOROwlQpTqyVOnGVSb9GEXJ/QzpjtedqxuREzyh12RcwalS08XLko7eSg06j6G9ke86uDsuZ55J+SzTTT/s73J2TqWGgqdGEacVuW19Le1vrOxjx1xxw1jaFutYrG0PqM2QAAAAAAAAAAAAAAAA04rC06sXCrCFSL2xnFSXeY2rW0bWjdExE9XLZR8H+Hnd0JToP8KbqQ7Ja12lDJ2bit3eTRbTVnpyc3jcxcXTu4cnWX8stGXYyhk7Ly17vNotprR0eJicl4ilflKFaNt/Jyce1XRUvpctetZapx2jrD4uVWy6vw3mjhlgzpkbDOmNhF1lxXaTwj6sNgK9W3J0as7740paPbsN1NPkt0rLKKWnpD2sFmTjKttKMKK41JpteyNy3j7My273Jtrp7z1dHk7we0Y2eIqTrPfCP2cO1a32ovY+y8de9O7fXTVjq6vA5PpYeOhRpwpx4Qilfre1vrOhTHWkbVjZYrWK8ofSZpAAAAAAAAAAAAAAAAAAAAAAMMDms7PI9hU1PRqydFWZT2s4uXqpWasB5SMcfVFVmZn7js6VcxOxiXm9kAAAAAAAAAAAAAH/2Q==" 
+            alt="secure"
+            style=" float:left; width:100px; height:100px;"
+            />
+          </h1>
+          <div class="Second_container" style="padding-bottom: 30px;">
+            <p class="Advantages">
+              Reassuringly secure.
+            </p>
+            <p class="content">
+              Django takes security seriously and helps developers avoid many common security
+              mistakes.
+            </p>
+          </div>
+          <h1 class="scalable">
+            <img src = "data:image/png;base64,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" 
+            alt="scalable"
+            style=" float:left; width:100px; height:100px;"
+            />
+          </h1>
+          <div class="Third_container" style="padding-bottom: 30px;">
+            <p class="Advantages">
+              Exceedingly scalable.
+            </p>
+            <p class="content">
+              Some of the busiest sites on the Web leverage Django's ability to quickly and flexibly
+              scale.
+            </p>
+          </div>
+          <a href="#" class="ctb">
+            Learn more about Django
+          </a>
+          <h2 class="main-title">Stay in the loop</h2>
+          <p class="main-desc">
+            Subscribe to one of our mailing lists to stay up to date with
+            everything in the Django community:
+          </p>
+          <div class="mailing-layout">
+            <div class="mailing">
+              <h3 class="mailing-title">
+                <a href="#">
+                  Using Django
                 </a>
+              </h3>
+              <p class="mailing-desc">
+                Get help with Django and follow announcements.
+              </p>
+              <form action="#" class="mailing-form">
+                <label for="input-following"
+                  >send email for following news</label
+                >
+                <input
+                  type="email"
+                  placeholder="Enter email"
+                  id="input-following"
+                  name="input-following"
+                />
+                <button type="submit" class="mailing-form-btn">Submit</button>
+              </form>
+              <p class="mailing-desc">
+                You can also subscribe by sending an email to
+                <a href="mailto:django-users+subscribe@googlegroups.com"
+                  >django-users+subscribe@googlegroups.com</a
+                >
+                and following the instructions that will be sent to you.
+              </p>
             </div>
+            <div class="mailing">
+              <h3 class="mailing-title">
+                <a href="#">Contributing to Django</a>
+              </h3>
+              <p class="mailing-desc">
+                Contribute to the development of Django itself.
+              </p>
+              <form action="#" class="mailing-form">
+                <label for="email-contribute"
+                  >send e-mail for contribution</label
+                >
+                <input
+                  type="email"
+                  placeholder="Enter email"
+                  id="email-contribute"
+                  name="email-contribute"
+                />
+                <button type="submit" class="mailing-form-btn">
+                  Submit
+                </button>
+              </form>
+              <p class="mailing-desc">
+                Before asking a question about how to contribute, read
+                <a
+                  href="https://docs.djangoproject.com/en/dev/internals/contributing/"
+                  >Contributing to Django</a
+                >. Many frequently asked questions are answered there.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="container-float">
-            <div class="main-content">
-                <h2 class="sitl">
-                    Stay in the loop
-                </h2>
-                <p class="namediscribtion">
-                    Subscibe to one of our mailing lists to stay up to date with everything in the Django
-                    coummunity:
-                </p>
-                <div class="maling">
-                    <div class="mailng-layout">
-                        <h3 class="mailing-title">
-                            <a href="#">
-                            Using Django
-                            </a>
-                        </h3>
-                        <p class="mailing-desc">
-                        Get help with Django and follow announcements.
-                        </p>
-                        <form action="#" class = "mailing-form">
-                            <label for="input-following">send email for following news</label>
-                            <input type="email" placeholder="Enter email" id="input-following" name="input-following"/>
-                            <button type="submit" class="mailing-form-btn">
-                                Submit
-                            </button>
-                        </form>
-                        <p class="mailing-desc">
-                            You can also subscribe by sending an email to 
-                            <a href = "django-users+subscibe@googlegroups.com"> 
-                                django-users+subscibe@googlegroups.com
-                            </a>
-                        and following the instructions what will be sent to you 
-                        </p>
-                        <div class="mailing">
-                            <h3 class="mailing-title">
-                                <a href = "#">Contributing to Django</a>
-                            </h3>
-                            <p class="mailing-desc">
-                                Contribute to the development of Django itself.
-                            </p>
-                            <form action = "#"  class = "mailing-form" >
-                                <label for="input-following">send email for following news</label>
-                                <input type="email" placeholder="Enter email" id="input-contribute" name="input-contribute"/>
-                                <button type="submit" class="mailing-form-btn">
-                                    Submit
-                                </button>
-                            </form>
-                            <p class="mailing-desc">
-                                Before asking a question about how to contribute,read
-                                <a 
-                                href = "#">Contributing to Django.</a>
-                                Many frequently asked questions
-                                are answered there.
-                            </p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="side-content">
-                사이드 콘텐츠
-            </div>
+        <div class="side-content">
+          사이드 컨텐츠
+          </div>
         </div>
+      </div>
     </main>
     <footer class="content-info">
         <div class="links">링크</div>
         <div class="footer">푸터</div>
     </footer>
-</body>
+  </body>
 </html>
