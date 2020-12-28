@@ -113,7 +113,10 @@ html {
 }
 
 /* MAIN CONTENT */
-
+.advent {
+  border-bottom: 1px solid #cfe3dc;
+  margin-bottom: -100px;
+}
 .ctb {
   color: gray;
   width: 500px;
@@ -125,12 +128,30 @@ html {
   background: white;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
+  margin-top: 130px;
   border-color: gainsboro;
   text-align: center;
 }
 
 .ctb:hover {
   border-color: #20aa76;
+}
+
+.imote {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.Advantages {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.Advantages-container {
+  padding-bottom: 30px;
+}
+.lines {
+  word-wrap: break-word;
 }
 .main-content {
   float: left;
@@ -177,6 +198,15 @@ html {
   font-size: 1.4rem;
   line-height: 1.3;
 }
+.mailing-second-desc {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+.first-mailing {
+  border-bottom: 1px solid #cfe3dc;
+}
 .mailing-form {
   margin: 10px 0 30px;
   position: relative;
@@ -209,9 +239,28 @@ input[type="email"] {
 /* SIDE CONTENT */
 
 .side-content {
-  background: yellow;
+  background-color: rgba(235, 227, 227, 0.637);
   float: right;
   width: 30%;
+}
+.contents {
+  font-size: 14px;
+}
+.content-write {
+  font-size: 14px;
+  color: #859d94;
+}
+
+.content-link {
+  font-size: 14px;
+  color: #25c488;
+  text-transform: uppercase;
+}
+
+.content-strong-link {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #25c488;
 }
 
 .content-info {
