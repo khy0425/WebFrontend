@@ -113,6 +113,15 @@ html {
 }
 
 /* MAIN CONTENT */
+.headline {
+  font-size: 18px;
+  color: #25c488;
+}
+.latest-news-line {
+  border-bottom: 1px solid #cfe3dc;
+  border-top: 1px solid #cfe3dc;
+}
+
 .advent {
   border-bottom: 1px solid #cfe3dc;
   margin-bottom: -100px;
@@ -267,12 +276,16 @@ input[type="email"] {
 .content-info {
   background: green;
 }
-.donated{
+.donated {
   border-top: 1px solid #cfe3dc;
 }
 .donate-title {
   margin-bottom: 10px;
 }
+.new-title-line {
+  border-bottom: 1px solid #cfe3dc;
+}
+
 
 .links {
   background: rgb(89, 212, 151);
